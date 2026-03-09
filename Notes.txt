@@ -1,3 +1,15 @@
 python3 manage.py runserver (this command used to run django project)
 
- python3 manage.py startapp products(this is the command you use to create a sub-module (or "app") within your project)
+python3 manage.py startapp products(this is the command you use to create a sub-module (or "app") within your project)
+
+__init__py = Tells Python that this folder is a "package." This allows you to import things from products into other parts of your Django project.
+
+admin.py = This is where you register your models so they show up in the Django Admin Dashboard. It’s how you (the owner) can add/delete products without writing code.
+
+apps.py = ID Card	Stores the configuration for that specific app (like its name). Usually, you don't need to change this much.
+
+models.py = Defines your Database Structure. You create Python classes here that Django transforms into database tables. (e.g., a Product class becomes a Products table).
+
+tests.py = Where you write code to test your app. It ensures that when you update your Django version, your app doesn't break.
+
+views.py = This is the "logic" layer. It takes a web request from a user, gets data from the models, and sends back a response (like an HTML page).
