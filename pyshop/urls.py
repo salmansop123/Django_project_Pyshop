@@ -22,4 +22,5 @@ from django.urls import path, include
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("products/", include("products.urls")) #This will diert the client to the correct url that we define "we define this oonly once to tell where to takr the client"
+
 ]
